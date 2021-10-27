@@ -1,0 +1,36 @@
+﻿@*<script src="dist/js/adminlte.min.js"></script>*@
+
+
+
+
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/adminlte.min.js"></script>
+
+@*<script>
+    var columns = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/AjaxMethod",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    columns.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": columns
+                });
+            }
+        });
+    });
+</script>*@
