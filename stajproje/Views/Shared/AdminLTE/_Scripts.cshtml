@@ -6,8 +6,9 @@
 <script src="~/plugins/jquery/jquery.min.js"></script>
 <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/adminlte.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 
-@*<script>
+<script>
     var columns = [];
     $(document).ready(function () {
         $.ajax({
@@ -33,4 +34,364 @@
             }
         });
     });
-</script>*@
+</script>
+
+
+
+<script>
+    var column = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/Filmcategory",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    column.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable1').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": column
+                });
+            }
+        });
+    });
+</script>
+
+
+
+
+<script>
+    var columns1 = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/PaymentCategory",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    columns1.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable2').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": columns1
+                });
+            }
+        });
+    });
+</script>
+
+
+
+<script>
+    var columns2 = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/Staffinfo",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    columns2.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable3').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": columns2
+                });
+            }
+        });
+    });
+</script>
+
+
+
+
+
+<script>
+    var columns3 = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/Actorfilm",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    columns3.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable4').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": columns3
+                });
+            }
+        });
+    });
+</script>
+
+
+
+
+<script>
+    var columns4 = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/CountryList",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    columns4.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable5').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": columns4
+                });
+            }
+        });
+    });
+</script>
+
+
+<script>
+    var columns5 = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/CustomerList",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    columns5.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable6').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": columns5
+                });
+            }
+        });
+    });
+</script>
+
+
+
+
+<script>
+    var columns6 = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/InventoryList",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    columns6.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable7').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": columns6
+                });
+            }
+        });
+    });
+</script>
+
+<script>
+    var columns7 = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/AddressList",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    columns7.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable8').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": columns7
+                });
+            }
+        });
+    });
+</script>
+
+
+<script>
+    var columns8 = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/StoreList",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    columns8.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable9').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": columns8
+                });
+            }
+        });
+    });
+</script>
+
+
+<script>
+    var columns9 = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/LanguageList",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    columns9.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable10').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": columns9
+                });
+            }
+        });
+    });
+</script>
+
+
+
+<script>
+    var columns10 = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/CityList",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    columns10.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable11').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": columns10
+                });
+            }
+        });
+    });
+</script>
+
+
+
+<script>
+    var columns11 = [];
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Home/RentalList",
+            type: "POST",
+            success: function (data) {
+                columnNames = Object.keys(data[0]);
+                for (var i in columnNames) {
+                    columns11.push({
+                        data: columnNames[i],
+                        title: columnNames[i]
+                    });
+                }
+                $('#myTable12').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": false, // for process server side
+                    "filter": true, // this is for disable filter (search box)
+                    "orderMulti": false, // for disable multiple column at once
+
+                    "data": data,
+                    "columns": columns11
+                });
+            }
+        });
+    });
+</script>

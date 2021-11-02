@@ -102,7 +102,6 @@ C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\stajpro
 C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
-C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
@@ -149,3 +148,14 @@ C:\Users\Administrator\source\repos\stajproje\stajproje\bin\Debug\net5.0\runtime
 C:\Users\Administrator\source\repos\stajproje\stajproje\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Administrator\source\repos\stajproje\stajproje\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Administrator\source\repos\stajproje\stajproje\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\Payment.cshtml.g.cs
+C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\Staffsss.cshtml.g.cs
+C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\Actor.cshtml.g.cs
+C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\Country.cshtml.g.cs
+C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\Customer.cshtml.g.cs
+C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\Inventory.cshtml.g.cs
+C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\Address.cshtml.g.cs
+C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\Store.cshtml.g.cs
+C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\Language.cshtml.g.cs
+C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\City.cshtml.g.cs
+C:\Users\Administrator\source\repos\stajproje\stajproje\obj\Debug\net5.0\Razor\Views\Home\Rental.cshtml.g.cs
